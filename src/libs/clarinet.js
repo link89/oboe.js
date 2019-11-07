@@ -30,7 +30,7 @@ function clarinet (eventBus) {
   var emitValueClose = eventBus(SAX_VALUE_CLOSE).emit
   var emitFail = eventBus(FAIL_EVENT).emit
 
-  var MAX_BUFFER_LENGTH = 64 * 1024
+  var MAX_BUFFER_LENGTH = 1024 * 1024
   var stringTokenPattern = /[\\"\n]/g
   var _n = 0
 
